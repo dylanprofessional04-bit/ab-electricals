@@ -800,6 +800,9 @@ img{display:block;max-width:100%}
 /* Hero ghost CTA */
 [data-theme="light"] .hcta-ghost{background:rgba(14,30,53,.08);color:rgba(14,30,53,.82);border-color:rgba(14,30,53,.2)}
 [data-theme="light"] .hcta-ghost:hover{background:rgba(14,30,53,.14)}
+/* CTA Banner ghost — stays on dark bg so keep white text */
+[data-theme="light"] .cban .hcta-ghost{color:rgba(255,255,255,.88);border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.08)}
+[data-theme="light"] .cban .hcta-ghost:hover{background:rgba(255,255,255,.15);color:#fff}
 
 /* Hero stat strip */
 [data-theme="light"] .hero-strip{background:rgba(216,230,244,.9);border-top:1px solid rgba(44,74,114,.15);backdrop-filter:blur(16px)}
