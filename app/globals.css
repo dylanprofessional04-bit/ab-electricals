@@ -366,13 +366,12 @@ img{display:block;max-width:100%}
 [data-theme="light"] .cc-price-row{background:var(--b);border-color:rgba(44,74,114,.35)}
 [data-theme="light"] .cc-price-l{color:rgba(255,255,255,.75)}
 [data-theme="light"] .cc-price-v{color:#fff}
-[data-theme="light"] .cc-price-n{color:rgba(255,255,255,.65)}
+[data-theme="light"] .cc-price-n{color:rgba(255,255,255,.82)}
 [data-theme="light"] .cc-price-r{color:rgba(255,255,255,.75)}
 .cc-price-l{font-family:"Barlow Condensed",sans-serif;font-size:8px;font-weight:800;
   letter-spacing:.18em;text-transform:uppercase;color:rgba(184,212,240,.75);margin-bottom:3px}
 .cc-price-v{font-family:"Fraunces",serif;font-size:30px;font-weight:900;color:#B8D4F0;line-height:1}
 .cc-price-n{font-size:10px;color:rgba(255,255,255,.8);margin-top:2px}
-[data-theme="light"] .cc-price-n{color:var(--el)}
 .cc-price-r{text-align:right;font-size:11px;color:var(--mu);line-height:1.7}
 .cc-btn{width:100%;height:46px;border-radius:10px;
   background:var(--bd);color:#B8D4F0;border:1px solid rgba(74,120,181,.35);
