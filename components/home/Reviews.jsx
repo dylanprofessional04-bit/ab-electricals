@@ -1,21 +1,26 @@
+// PLACEHOLDER — Replace with verified Google Reviews once collected.
+// Per SEO docket: no fabricated testimonials. Copy real reviews from Google Business Profile.
 const reviews = [
   {
-    initial: 'M',
-    name: 'Marcus T.',
-    location: 'Enfield, EN2',
-    text: '"Adam and his team were brilliant. Turned up on time, done in three hours, left the place spotless. Charger set up on the Octopus app before they left. I was charging the same evening."',
+    initial: '?',
+    name: '[Customer Name]',
+    location: 'Enfield',
+    text: '"[Paste verified Google review here]"',
+    placeholder: true,
   },
   {
-    initial: 'P',
-    name: 'Priya S.',
-    location: 'Southgate, N14',
-    text: '"Really professional. I was quoted a fixed price and that\'s exactly what I paid — no surprises. The Ohme charger is brilliant, already saving me a fortune vs the public chargers."',
+    initial: '?',
+    name: '[Customer Name]',
+    location: 'North London',
+    text: '"[Paste verified Google review here]"',
+    placeholder: true,
   },
   {
-    initial: 'J',
-    name: 'James W.',
-    location: 'Waltham Cross, EN8',
-    text: '"Would absolutely recommend. Excellent communication throughout. Certificate same day and they helped me switch to Octopus Intelligent Go. Charging at 7p now. The difference is remarkable."',
+    initial: '?',
+    name: '[Customer Name]',
+    location: 'Hertfordshire',
+    text: '"[Paste verified Google review here]"',
+    placeholder: true,
   },
 ];
 

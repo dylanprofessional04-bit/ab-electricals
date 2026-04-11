@@ -25,6 +25,7 @@ const chargers = [
       { has: false, text: 'Solar integration' },
     ],
     priceLabel: 'Fully Installed — inc. VAT',
+    chargerOnly: 499,
     price: 899,
     priceNote: 'All cabling · survey · certificate',
     btnText: 'Get a Quote',
@@ -50,14 +51,15 @@ const chargers = [
       { has: false, text: 'Solar integration' },
     ],
     priceLabel: 'Fully Installed — inc. VAT',
+    chargerOnly: 529,
     price: 999,
-    priceNote: 'All cabling · survey · certificate',
+    priceNote: '5m cable · or £1,075 with 8m cable',
     btnText: 'Get a Quote',
   },
   {
     id: 'hypervolt',
     brand: 'Hypervolt',
-    name: 'Home 3',
+    name: 'Home 3 Pro',
     badge: 'Solar Ready',
     featured: false,
     tagline: 'Solar integration. All UK smart tariffs. Premium build quality.',
@@ -75,8 +77,9 @@ const chargers = [
       { has: true, text: 'Weatherproof IP65 rated' },
     ],
     priceLabel: 'Fully Installed — inc. VAT',
+    chargerOnly: 619,
     price: 1075,
-    priceNote: 'All cabling · survey · certificate',
+    priceNote: '5m · 7.5m £1,110 · 10m £1,150',
     btnText: 'Get a Quote',
   },
   {
@@ -100,6 +103,7 @@ const chargers = [
       { has: false, text: 'Charger hardware not supplied' },
     ],
     priceLabel: 'Labour + Certificate — inc. VAT',
+    chargerOnly: null,
     price: 299,
     priceNote: 'Your charger · our expertise',
     btnText: 'Book Install',
@@ -153,7 +157,9 @@ export default function Chargers({ onOpenModal }) {
                   <div className="cc-price-v">{formatPrice(c.price)}</div>
                   <div className="cc-price-n">{c.priceNote}</div>
                 </div>
-                <div className="cc-price-r">Pay after<br />No deposit</div>
+                <div className="cc-price-r">
+                  {c.chargerOnly ? <><span style={{fontSize:10,opacity:.7}}>Charger only</span><br />{formatPrice(c.chargerOnly)}</> : <>Pay after<br />No deposit</>}
+                </div>
               </div>
               <button
                 className="cc-btn"

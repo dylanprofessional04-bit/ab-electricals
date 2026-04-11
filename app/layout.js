@@ -1,15 +1,16 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'EV Charger Installation Enfield & North London | AB Electricals',
-  description: 'NICEIC-approved EV charger installation in Enfield from £899 fully installed. Fixed price, same-day certificate, pay after installation. Serving EN1–EN3 and North London.',
+  title: 'EV Charger Installation Enfield | AB Electricals — From £899 Installed',
+  description: 'EV charger installation in Enfield & North London from £899 inc. standard installation. 6 qualified engineers, 140+ jobs/month. WhatsApp us today.',
   openGraph: {
-    title: 'EV Charger Installation Enfield | AB Electricals',
-    description: 'Fixed price EV charger installation from £899. NICEIC approved. Same-day certificate. Pay after.',
+    title: 'EV Charger Installation Enfield | AB Electricals — From £899 Installed',
+    description: 'EV charger installation in Enfield & North London from £899. 6 NICEIC-approved engineers. Fixed price. Same-day certificate. Pay after.',
     type: 'website',
+    url: 'https://ab-electricals.co.uk/',
   },
   alternates: {
-    canonical: 'https://ab-electricals.co.uk',
+    canonical: 'https://ab-electricals.co.uk/',
   },
 };
 
@@ -20,11 +21,11 @@ const schemaData = {
       "@type": "LocalBusiness",
       "@id": "https://ab-electricals.co.uk/#business",
       "name": "AB Electricals",
-      "description": "NICEIC-approved EV charger installation specialists in Enfield and North London",
-      "url": "https://ab-electricals.co.uk",
-      "telephone": "07395501091",
+      "description": "NICEIC-approved EV charger installation specialists in Enfield and North London. 6 qualified engineers, 140+ installations per month. Fixed price from £899 fully installed.",
+      "url": "https://ab-electricals.co.uk/",
+      "telephone": "+447395501091",
       "email": "info@ab-electricals.co.uk",
-      "priceRange": "££",
+      "priceRange": "£899–£1,150",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Winnington Road",
@@ -48,21 +49,74 @@ const schemaData = {
         "reviewCount": "47",
         "bestRating": "5"
       },
+      "serviceType": [
+        "EV Charger Installation",
+        "Home EV Charger Installation",
+        "Commercial EV Charging",
+        "Workplace EV Charging",
+        "Commercial Electrical Services"
+      ],
       "areaServed": [
         { "@type": "City", "name": "Enfield" },
+        { "@type": "City", "name": "North London" },
+        { "@type": "AdministrativeArea", "name": "Hertfordshire" },
+        { "@type": "AdministrativeArea", "name": "Essex" },
         { "@type": "City", "name": "Edmonton" },
+        { "@type": "City", "name": "Tottenham" },
         { "@type": "City", "name": "Waltham Cross" },
-        { "@type": "City", "name": "Cheshunt" },
         { "@type": "City", "name": "Barnet" },
         { "@type": "City", "name": "Southgate" }
       ]
     },
     {
+      "@type": "WebSite",
+      "@id": "https://ab-electricals.co.uk/#website",
+      "url": "https://ab-electricals.co.uk/",
+      "name": "AB Electricals",
+      "description": "EV charger installation in Enfield and North London",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://ab-electricals.co.uk/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://ab-electricals.co.uk/#faq",
       "mainEntity": [
-        { "@type": "Question", "name": "How much does EV charger installation cost in Enfield?", "acceptedAnswer": { "@type": "Answer", "text": "EV charger installation in Enfield costs from £899 fully installed with AB Electricals. This includes the charger, all cabling, earthing, survey and Part P certificate. Ohme ePod £899, Ohme Home Pro £999, Hypervolt Home 3 £1,075. Labour only £299." } },
-        { "@type": "Question", "name": "How long does EV charger installation take?", "acceptedAnswer": { "@type": "Answer", "text": "Most home EV charger installations in Enfield take 3 to 4 hours. You receive your Part P completion certificate the same day." } },
-        { "@type": "Question", "name": "When do I pay for EV charger installation?", "acceptedAnswer": { "@type": "Answer", "text": "You pay after installation, once you are satisfied. No deposit required." } }
+        {
+          "@type": "Question",
+          "name": "How much does EV charger installation cost in Enfield?",
+          "acceptedAnswer": { "@type": "Answer", "text": "EV charger installation in Enfield costs from £899 fully installed with AB Electricals. This includes the charger, all cabling, earthing, the free survey, and your Part P certificate. Ohme ePod: £899. Ohme Home Pro (5m): £999. Hypervolt Home 3 Pro (5m): £1,075. Labour only installation: £299. All prices include VAT. You pay after installation." }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does EV charger installation take?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Most home EV charger installations in Enfield take 3 to 4 hours. We aim to be finished before lunch. You receive your Part P completion certificate the same day and can charge your car the same evening." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to upgrade my consumer unit for an EV charger?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Most homes do not need a consumer unit upgrade for EV charger installation. We check yours during the free survey. If it does need upgrading, we will tell you the cost before you commit to anything." }
+        },
+        {
+          "@type": "Question",
+          "name": "When do I pay for EV charger installation?",
+          "acceptedAnswer": { "@type": "Answer", "text": "You pay after installation, once you are satisfied. We do not take deposits. Payment is due only after the charger is installed, tested, and working correctly." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which smart tariff should I use with my EV charger?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Octopus Intelligent Go is the best smart tariff for most EV drivers — 7p per kWh between 11:30pm and 5:30am, fully automated. Your charger schedules overnight charging automatically. We help you get set up on the day of installation." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you install EV chargers for commercial properties?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. AB Electricals installs EV chargers for offices, car parks, retail units, and business fleets across North London. Call 07395 501091 or WhatsApp us to discuss commercial requirements." }
+        }
       ]
     }
   ]

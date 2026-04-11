@@ -32,26 +32,25 @@ export default function Hero({ onOpenModal }) {
             <span>Enfield &amp; North London &middot; EV Specialists</span>
           </div>
           <h1>
-            The leaders in<br />
-            EV charger installation.<br />
+            EV Charger Installation<br />
+            in Enfield &amp; North London.<br />
             <em>Fixed price. Done right.</em>
           </h1>
           <p className="hero-sub">
-            Helping Enfield homes charge cleaner, cheaper, and smarter.{' '}
-            <strong>From &pound;899 fully installed</strong> &mdash; NICEIC approved, same-day
-            certificate, you pay after we&rsquo;re done.
+            <strong>From &pound;899 fully installed</strong> &mdash; 6 NICEIC-approved engineers,
+            140+ installations per month. Same-day certificate, you pay after we&rsquo;re done.
           </p>
           <div className="hero-ctas">
-            <button className="hcta-pri" onClick={onOpenModal}>
-              <BoltIcon />Get a Free Quote
-            </button>
             <a
-              href="https://wa.me/447395501091"
-              className="hcta-ghost"
+              href="https://wa.me/447395501091?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20an%20EV%20charger%20installation"
+              className="hcta-pri"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <WhatsAppIcon />WhatsApp Us
+              <WhatsAppIcon />WhatsApp for a Quote
+            </a>
+            <a href="tel:07395501091" className="hcta-ghost">
+              <BoltIcon />Call 07395 501091
             </a>
           </div>
         </div>
