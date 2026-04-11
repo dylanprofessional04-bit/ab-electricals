@@ -12,15 +12,15 @@
   --bdr: rgba(74,120,181,.2);
   --bdr2:rgba(74,120,181,.09);
 
-  /* Deep navy/electric blue — EV, charging, pricing, electricity ONLY */
-  --e:   #1B54D4;
-  --el:  #3B7AF5;
-  --ebr: #7EB5FF;
-  --ed:  #0D2A6E;
+  /* Steel blue accent — EV, charging, pricing, electricity */
+  --e:   #4A78B5;
+  --el:  #4A78B5;
+  --ebr: #4A78B5;
+  --ed:  #2C4A72;
   --edp: #070F2A;
-  --es:  rgba(27,84,212,.12);
-  --es2: rgba(27,84,212,.22);
-  --ebdr:rgba(59,122,245,.3);
+  --es:  rgba(74,120,181,.12);
+  --es2: rgba(74,120,181,.22);
+  --ebdr:rgba(74,120,181,.3);
 
   /* Surfaces */
   --bg:  #080E18;
@@ -49,14 +49,14 @@
   --bdr: rgba(44,74,114,.18);
   --bdr2:rgba(44,74,114,.08);
 
-  --e:   #1340AA;
-  --el:  #1B54D4;
-  --ebr: #3B7AF5;
-  --ed:  #0A2260;
+  --e:   #4A78B5;
+  --el:  #4A78B5;
+  --ebr: #4A78B5;
+  --ed:  #2C4A72;
   --edp: #06122A;
-  --es:  rgba(19,64,170,.08);
-  --es2: rgba(19,64,170,.16);
-  --ebdr:rgba(27,84,212,.25);
+  --es:  rgba(74,120,181,.08);
+  --es2: rgba(74,120,181,.16);
+  --ebdr:rgba(74,120,181,.25);
 
   --bg:  #EDF2FA;
   --bg2: #FFFFFF;
@@ -125,7 +125,7 @@ img{display:block;max-width:100%}
 .ntel{font-family:"Barlow Condensed",sans-serif;font-size:14px;font-weight:800;letter-spacing:.05em;color:var(--bl);transition:color .18s;white-space:nowrap}
 .ntel:hover{color:var(--b)}
 .nqbtn{height:40px;padding:0 20px;border-radius:9px;background:var(--ed);color:var(--ebr);font-family:"Barlow Condensed",sans-serif;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--ebdr);display:inline-flex;align-items:center;gap:7px;transition:all .2s;white-space:nowrap;flex-shrink:0}
-.nqbtn:hover{background:var(--e);color:#fff;transform:translateY(-1px);box-shadow:0 4px 18px rgba(27,84,212,.35)}
+.nqbtn:hover{background:var(--b);color:#fff;transform:translateY(-1px);box-shadow:0 4px 18px rgba(74,120,181,.35)}
 .nqbtn svg{width:12px;height:12px}
 .hbg{display:none;width:36px;height:36px;flex-direction:column;justify-content:center;gap:5px;flex-shrink:0}
 .hbg span{display:block;width:20px;height:2px;background:var(--tx);border-radius:2px;transition:all .28s}
@@ -285,7 +285,7 @@ img{display:block;max-width:100%}
 [data-theme="light"] .istat-v{color:var(--b)}
 [data-theme="light"] .istat-l{color:var(--mu)}
 [data-theme="light"] .impact-orb{background:radial-gradient(circle at 40% 35%,rgba(106,144,191,.25) 0%,rgba(74,120,181,.2) 50%,rgba(44,74,114,.28) 100%);border-color:rgba(74,120,181,.22)}
-[data-theme="light"] .impact-bolt{color:var(--el);filter:drop-shadow(0 0 14px rgba(27,84,212,.3))}
+[data-theme="light"] .impact-bolt{color:var(--el);filter:drop-shadow(0 0 14px rgba(74,120,181,.3))}
 .impact::before{content:"";position:absolute;inset:0;
   background:radial-gradient(ellipse at 60% 50%,rgba(27,84,212,.12) 0%,transparent 65%)}
 .impact-grid{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
@@ -401,12 +401,12 @@ img{display:block;max-width:100%}
 [data-theme="light"] .tariff-tbl tr:hover td{background:rgba(44,74,114,.04)}
 [data-theme="light"] .tnm{color:var(--tx)}
 /* Tariff colours — darker for contrast on pale steel bg */
-[data-theme="light"] .t-rate.e{color:#1340AA}
-[data-theme="light"] .trt.e{color:#1340AA}
+[data-theme="light"] .t-rate.e{color:#4A78B5}
+[data-theme="light"] .trt.e{color:#4A78B5}
 [data-theme="light"] .t-rate.r{color:#B91C1C}
 [data-theme="light"] .trt.r{color:#B91C1C}
 [data-theme="light"] .trt.a{color:#92400E}
-[data-theme="light"] .tcp.yes{background:rgba(19,64,170,.1);color:#1340AA}
+[data-theme="light"] .tcp.yes{background:rgba(74,120,181,.1);color:#4A78B5}
 [data-theme="light"] .tcp.ok{background:rgba(146,64,14,.1);color:#92400E}
 [data-theme="light"] .tcp.no{background:rgba(185,28,28,.1);color:#B91C1C}
 .tariff-sec::after{content:"";position:absolute;top:0;right:0;width:50%;height:100%;
