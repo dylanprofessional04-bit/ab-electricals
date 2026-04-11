@@ -48,8 +48,8 @@ export default function Reviews() {
           </div>
         </div>
         <div className="rev-grid rv2">
-          {reviews.map((r) => (
-            <article className="rcard" key={r.name}>
+          {reviews.map((r, i) => (
+            <article className="rcard" key={`${r.name}-${i}`}>
               <div className="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
               <p className="rc-txt">{r.text}</p>
               <div className="rc-auth">
