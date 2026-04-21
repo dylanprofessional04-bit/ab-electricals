@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { BoltIcon } from '../ui/Icons';
 
 const navItems = [
-  { href: 'https://ab-electricals.co.uk/', label: 'Home' },
   {
     href: 'https://ab-electricals.co.uk/ev-charger-installation/',
     label: 'EV Charger Installation',

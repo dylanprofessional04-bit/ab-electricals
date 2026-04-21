@@ -149,29 +149,24 @@ img{display:block;max-width:100%}
 /* ── HERO ───────────────────────── */
 .hero{position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
 .hero-bg{position:absolute;inset:0;z-index:0;
-  background:
-    /* dramatic sky-to-horizon gradient */
+  background-color:#0A1428;
+  background-image:
     linear-gradient(180deg,
-      #04091A 0%,
-      #060D26 15%,
-      #091428 30%,
-      #0C1A32 50%,
-      #0A1428 65%,
-      #070E1E 80%,
-      #040810 100%);
+      rgba(4,9,26,.42) 0%,
+      rgba(6,13,38,.5) 30%,
+      rgba(9,20,40,.72) 65%,
+      rgba(4,8,16,.96) 100%),
+    url("/page_images/forest-bg.webp");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-blend-mode:normal,luminosity;
 }
-/* Mountain ridge silhouette */
+/* Atmospheric horizon glow overlay */
 .hero-bg::after{content:"";position:absolute;inset:0;
   background:
-    /* distant ridge, lighter tone */
-    radial-gradient(ellipse 120% 28% at 50% 64%, #0F1E3A 0%, transparent 100%),
-    /* mid ridge, darker */
-    radial-gradient(ellipse 110% 22% at 30% 70%, #0A1428 0%, transparent 100%),
-    radial-gradient(ellipse 100% 20% at 75% 72%, #091220 0%, transparent 100%),
-    /* sky glow — subtle horizon light */
-    radial-gradient(ellipse 80% 40% at 52% 44%, rgba(20,48,100,.55) 0%, transparent 70%),
-    radial-gradient(ellipse 60% 30% at 20% 35%, rgba(12,28,68,.35) 0%, transparent 65%),
-    radial-gradient(ellipse 50% 25% at 82% 30%, rgba(10,24,58,.28) 0%, transparent 60%);
+    radial-gradient(ellipse 80% 40% at 52% 42%, rgba(30,70,140,.28) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 30% at 20% 35%, rgba(12,28,68,.22) 0%, transparent 65%);
   pointer-events:none}
 /* Film-grain texture */
 .hero-bg::before{content:"";position:absolute;inset:0;
@@ -780,24 +775,24 @@ img{display:block;max-width:100%}
    LIGHT MODE — HERO + REMAINING OVERRIDES
 ════════════════════════════════════ */
 
-/* Hero — dawn sky background */
+/* Hero — misty dawn photo background */
 [data-theme="light"] .hero-bg{
-  background:linear-gradient(180deg,
-    #C8D9EE 0%,
-    #D4E3F5 15%,
-    #DCE9F6 30%,
-    #E2EDF8 50%,
-    #D8E5F3 70%,
-    #CDDAEE 85%,
-    #C8D9EE 100%)}
+  background-color:#D8E5F3;
+  background-image:
+    linear-gradient(180deg,
+      rgba(232,241,250,.55) 0%,
+      rgba(222,234,246,.6) 30%,
+      rgba(206,222,240,.78) 65%,
+      rgba(200,217,238,.97) 100%),
+    url("/page_images/forest-bg.webp");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-blend-mode:normal,luminosity}
 [data-theme="light"] .hero-bg::after{
   background:
-    radial-gradient(ellipse 120% 28% at 50% 64%,#B8CEE5 0%,transparent 100%),
-    radial-gradient(ellipse 110% 22% at 30% 70%,#BFCFE6 0%,transparent 100%),
-    radial-gradient(ellipse 100% 20% at 75% 72%,#BDCDE5 0%,transparent 100%),
-    radial-gradient(ellipse 80% 40% at 52% 44%,rgba(160,195,230,.38) 0%,transparent 70%),
-    radial-gradient(ellipse 60% 30% at 20% 35%,rgba(140,175,215,.22) 0%,transparent 65%),
-    radial-gradient(ellipse 50% 25% at 82% 30%,rgba(130,168,210,.18) 0%,transparent 60%)}
+    radial-gradient(ellipse 80% 40% at 52% 44%,rgba(160,195,230,.3) 0%,transparent 70%),
+    radial-gradient(ellipse 60% 30% at 20% 35%,rgba(180,205,230,.18) 0%,transparent 65%)}
 [data-theme="light"] .hero-bg::before{opacity:.18}
 [data-theme="light"] .hero-mist1{background:radial-gradient(ellipse at left,rgba(100,145,195,.13) 0%,transparent 70%)}
 [data-theme="light"] .hero-mist2{background:radial-gradient(ellipse at right,rgba(80,125,185,.09) 0%,transparent 70%)}
