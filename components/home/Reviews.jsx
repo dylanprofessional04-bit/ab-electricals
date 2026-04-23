@@ -32,10 +32,10 @@ export default function Reviews() {
           <div>
             <span className="ey e" style={{ marginBottom: 10 }}>Google Reviews</span>
             <h2 style={{
-              fontFamily: "'Fraunces',serif",
-              fontSize: 'clamp(26px,3.5vw,42px)',
-              fontWeight: 900,
-              letterSpacing: '-.035em',
+              fontFamily: "'Cormorant',serif",
+              fontSize: 'clamp(30px,3.6vw,50px)',
+              fontWeight: 700,
+              letterSpacing: '-.04em',
               color: 'var(--tx)',
             }}>
               What Enfield homeowners say

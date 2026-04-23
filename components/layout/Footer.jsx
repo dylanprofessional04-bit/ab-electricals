@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <div className="f-logo">
               <div className="nmark"><BoltIcon /></div>
-              <span style={{ fontFamily: "'Fraunces',serif", fontSize: 16, fontWeight: 700, color: 'var(--tx)' }}>
+              <span style={{ fontFamily: "'Cormorant',serif", fontSize: 16, fontWeight: 700, color: 'var(--tx)' }}>
                 AB Electricals
               </span>
             </div>
